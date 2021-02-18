@@ -72,31 +72,76 @@ a{
 
 /*Req 6a*/
 td{
-  
+  text-align: center;
+  border-top: 2px solid black;
+  padding: 10px;
 }
 
 /*Req 6b*/
 .colhead{
   color: #FFFFFF;
-
+  min-width: 125px;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #7e0820;
 }
+
 /*Req 6c*/
 .rowhead{
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+
 
 }
 
+table tbody tr:nth-child(odd){
+  background-color: transparent;
+}
 /*Req 6d*/
+
+table tbody tr:nth-child(even){
+  background-color: #D1D1D1;
+}
 /*Req 6e*/
+
+table tbody tr:hover{
+  background-color: #7e0820;
+  opacity: .25;
+
+}
 /*Req 6f*/
 
 
 /*Req 7*/
 table{
     border: 2px solid #000000;
+    margin: auto;
+    border-radius: 10px;
 }
 
-thead tr:first-child th:first-child{}
+/* this doesn't work because the background color is applied to the individual colhead or the table headers
+thead tr:first-child{
+}
+this doesn't work because it's not the first child of colhead
+.colhead:first-child{
+} */
 
+thead tr:first-child th:first-child{
+  border-top-left-radius: 10px;
+}
+
+thead tr:first-child th:last-child{
+  border-top-right-radius: 10px;
+}
+
+tbody tr:last-child th{
+  border-bottom-left-radius: 10px;
+}
+
+tbody tr:last-child td:last-child{
+  border-bottom-right-radius: 10px;
+}
 /*Add selectors and rules here*/
 
 
@@ -106,5 +151,8 @@ footer{
   background:#000000;
   text-align:center;
   color: #FFFFFF;
+  min-height: 75px;
+  position: fixed;
+  bottom: 0;
 }
 
