@@ -106,8 +106,7 @@ table tbody tr:nth-child(even){
 /*Req 6e*/
 
 table tbody tr:hover{
-  background-color: #7e0820;
-  opacity: .25;
+  background-color: rgba(126, 8, 32, .25);
 
 }
 /*Req 6f*/
@@ -154,5 +153,6 @@ footer{
   min-height: 75px;
   position: fixed;
   bottom: 0;
+  left: 0;
 }
 
